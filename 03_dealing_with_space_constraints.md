@@ -8,7 +8,7 @@ Big O achieves consistency by focusing only on the number of steps that an algor
 
 When an operation takes just one step, no matter how large the data structure is, the way to express this in Big O notation is 
 
-$$ O(1) $$
+$$ \mathcal{O}(1) $$
 
 This simply means that the algorithm takes the same number of steps no matter how much data there is.
 
@@ -16,7 +16,7 @@ Other operations that fall under this category are the insertion and deletion of
 
 For N elements in the array, linear search can take up to a maximum of N steps. The appropiate way to express this in Big O notation is:
 
-$$ O(N) $$
+$$ \mathcal{O}(N) $$
 
 This is the way to say that for N elements inside an array, the algorithm would take N steps to complete.
 
@@ -50,7 +50,7 @@ The reason for this is that this pessimistic approach can be a useful tool: this
 
 The way to describe binary search in terms of Big O Notation is by saying that it has a time complexity of 
 
-$$ O(\log{N}) $$
+$$ \mathcal{O}(\log{N}) $$
 
 This is the way of describing an algorithm that increases one step each time the data is doubled.
 
