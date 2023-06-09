@@ -39,7 +39,6 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 4. Speeding Up Your Code with Big O
 
     - Bubble Sort
-    - Bubble Sort in Action 
     - Bubble Sort Implemented
     - The Efficiency of Bubble Sort
     - A Quadratic Problem 
