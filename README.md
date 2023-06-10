@@ -42,7 +42,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
     - Bubble Sort Implemented
     - The Efficiency of Bubble Sort
     - A Quadratic Problem 
-    - A Linear Solution 
+    - A Linear Solution [_Nice trick to check for duplicates in an array fast, in linear time_]
 
 .
 
@@ -52,7 +52,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
     - The Efficiency of Selection Sort
     - Ignoring Constants
     - The Role of Big O
-    - A Practical Example
+    - A Practical Example [_Nice trick to add every other element of an array to another array_]
     - Wrapping Up
 
 
