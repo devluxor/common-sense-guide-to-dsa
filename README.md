@@ -46,3 +46,13 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
+5. Optimizing Code With and Without Big O
+    - Selection Sort
+    - Selection Sort Implemented
+    - The Efficiency of Selection Sort
+    - Ignoring Constants
+    - The Role of Big O
+    - A Practical Example
+    - Wrapping Up
+
+
