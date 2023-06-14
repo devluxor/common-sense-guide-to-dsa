@@ -55,4 +55,12 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
     - A Practical Example [_Nice trick to add every other element of an array to another array_]
     - Wrapping Up
 
+.
 
+6. Optimizing for Optimistic Scenarios
+    - Insertion Sort
+    - Insertion Sort Implemented
+    - The Efficiency of Insertion Sort
+    - The Average Case
+    - A Practical Example [_Nice trick to improve the speed of some nested iterations_]
+    - Wrapping Up
