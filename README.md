@@ -53,7 +53,6 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
     - Ignoring Constants
     - The Role of Big O
     - A Practical Example [_Nice trick to add every other element of an array to another array_]
-    - Wrapping Up
 
 .
 
@@ -63,4 +62,3 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
     - The Efficiency of Insertion Sort
     - The Average Case
     - A Practical Example [_Nice trick to improve the speed of some nested iterations_]
-    - Wrapping Up
