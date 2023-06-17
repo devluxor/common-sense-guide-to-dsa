@@ -62,3 +62,13 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
     - The Efficiency of Insertion Sort
     - The Average Case
     - A Practical Example [_Nice trick to improve the speed of some nested iterations_]
+
+.
+
+7. Blazing Fast Lookup With Hash Tables
+    - Enter the Hash Table
+    - Hashing with Hash Functions
+    - How Hash Function Work
+    - Dealing with Collisions
+    - The Great Balancing Act [_Load factor (data/cells ratio) when implementing hashes_]
+
