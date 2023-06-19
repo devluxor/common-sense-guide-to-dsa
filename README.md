@@ -5,7 +5,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 ## Contents:
 
 
-1. Why Data Structures Matter
+1. [Why Data Structures Matter](01_why_data_structures_matter.md)
 
     - The Array: The Foundational Data Structure
     - Reading 
@@ -16,7 +16,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-2. Why Algorithms Matter
+2. [Why Algorithms Matter](02_why_algorithms_matter.md)
 
     - Ordered Arrays
     - Searching an Ordered Array
@@ -25,7 +25,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-3. Dealing With Space Constraints
+3. [Dealing With Space Constraints](03_dealing_with_space_constraints.md)
 
     - Big O: Count the Steps
     - Constant Time Vs. Linear Time 
@@ -36,7 +36,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-4. Speeding Up Your Code with Big O
+4. [Speeding Up Your Code with Big O](04_speeding_up_your_code_with_big_o.md)
 
     - Bubble Sort
     - Bubble Sort Implemented
@@ -46,7 +46,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-5. Optimizing Code With and Without Big O
+5. [Optimizing Code With and Without Big O](05_optimizing_code_with_and_without_big_o.md)
     - Selection Sort
     - Selection Sort Implemented
     - The Efficiency of Selection Sort
@@ -56,7 +56,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-6. Optimizing for Optimistic Scenarios
+6. [Optimizing for Optimistic Scenarios](06_optimizing_for_optimistic_scenarios.md)
     - Insertion Sort
     - Insertion Sort Implemented
     - The Efficiency of Insertion Sort
@@ -65,10 +65,17 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-7. Blazing Fast Lookup With Hash Tables
+7. [Blazing Fast Lookup With Hash Tables](07_blazing_fast_lookup_with_hash_tables.md)
     - Enter the Hash Table
     - Hashing with Hash Functions
     - How Hash Function Work
     - Dealing with Collisions
     - The Great Balancing Act [_Load factor (data/cells ratio) when implementing hashes_]
 
+.
+
+8. [Crafting Elegant Code with Stacks and Queues](08_crafting_elegant_code_with_stacks_and_queues.md)
+    - Stacks
+    - Stacks in Action [_Algorithm to check for valid braces in a string_]
+    - Queues
+    - Queues in Action
