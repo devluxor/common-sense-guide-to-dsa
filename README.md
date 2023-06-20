@@ -79,3 +79,12 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
     - Stacks in Action [_Algorithm to check for valid braces in a string_]
     - Queues
     - Queues in Action
+
+.
+
+9. [Recursively Recurse with Recursion]()
+    - Recurse Instead of Loop
+    - The Base Case
+    - Reading Recursive Code
+    - Recursion in the Eyes of the Computer
+    - Recursion in Action [_Algorithm to recursively traverse all files and subdirectories from a root folder_]
