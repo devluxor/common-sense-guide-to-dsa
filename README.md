@@ -82,9 +82,18 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-9. [Recursively Recurse with Recursion]()
+9. [Recursively Recurse with Recursion](09_recursively_recurse_with_recursion.md)
     - Recurse Instead of Loop
     - The Base Case
     - Reading Recursive Code
     - Recursion in the Eyes of the Computer
     - Recursion in Action [_Algorithm to recursively traverse all files and subdirectories from a root folder_]
+
+.
+
+10. [Recursive Algorithms for Speed](10_recursive_algorithms_for_speed.md)
+    - Partitioning
+    - Quicksort
+    - The Efficiency of Quicksort
+    - Worst Case Scenario 
+    - Quickselect
