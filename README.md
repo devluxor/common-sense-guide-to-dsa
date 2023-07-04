@@ -97,3 +97,13 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
     - The Efficiency of Quicksort
     - Worst Case Scenario 
     - Quickselect
+
+11. [Node-based Data Structures](11_node_based_data_structures.md)
+    - Linked Lists
+    - Implementing a Linked List
+    - Reading
+    - Searching
+    - Insertion
+    - Deletion
+    - Linked Lists in Action [_Good practice case for the need of a linked list_]
+    - Doubly Linked Lists
