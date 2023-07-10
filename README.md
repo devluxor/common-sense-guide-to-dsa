@@ -108,7 +108,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
     - Linked Lists in Action [_Good practice case for the need of a linked list_]
     - Doubly Linked Lists
 
-12. [Speeding Up All the Things with Binary Trees](13_speeding_up_all_the_things_with_binary_trees.md)
+12. [Speeding Up All the Things with Binary Trees](12_speeding_up_all_the_things_with_binary_trees.md)
     - Binary Trees
     - Searching
     - Insertion
