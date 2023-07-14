@@ -98,6 +98,8 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
     - Worst Case Scenario 
     - Quickselect
 
+.
+
 11. [Node-based Data Structures](11_node_based_data_structures.md)
     - Linked Lists
     - Implementing a Linked List
@@ -108,9 +110,26 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
     - Linked Lists in Action [_Good practice case for the need of a linked list_]
     - Doubly Linked Lists
 
+.
+
 12. [Speeding Up All the Things with Binary Trees](12_speeding_up_all_the_things_with_binary_trees.md)
     - Binary Trees
     - Searching
     - Insertion
     - Deletion
     - Binary Trees in Action [_Includes traversal algorithm_]
+
+.
+
+13. [Connecting Everything with Graphs](13_connecting_everything_with_graphs.md)
+    - Graphs
+    - Breadth-First Search
+    - Graph Databases
+    - Weighted Graphs
+    - Dijkstra's Algorithm
+
+.
+
+14. [Dealing with Space Constraints](14_dealing_with_space_constraints.md)
+    - Big O Notation As Applied to Space Complexity
+    - Trade-offs between time and space
