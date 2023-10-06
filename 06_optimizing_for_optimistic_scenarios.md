@@ -87,7 +87,7 @@ So if Insertion Sort takes N<sup>2</sup> steps for the worst case scenario, weâ€
 
 If we compare this with Selection Sort, we will find out that Selection Sort takes  _N<sup>2</sup>/ in all cases, because it does not have any mechanism to for ending a passthrough early at any point.
 
-So, which is better, Selection Sort or Insertion Sort? It depends. In an average case -when the array is randomly sorted - they perform similarly. If you have reason to assuma that you'll be dealing with data that is _mostly_ sorted, Insertion Sort will be a better choice. If you have reason to asume that you'll be dealing with data that is mostly sorted in reverse order, Selection Sort will be faster. If you have no idea what the data will be like, that's essentially an average case, and both will be equal.
+So, which is better, Selection Sort or Insertion Sort? It depends. In an average case -when the array is randomly sorted - they perform similarly. If you have reason to assume that you'll be dealing with data that is _mostly_ sorted, Insertion Sort will be a better choice. If you have reason to assume that you'll be dealing with data that is mostly sorted in reverse order, Selection Sort will be faster. If you have no idea what the data will be like, that's essentially an average case, and both will be equal.
 
 ## A Practical Case
 
@@ -110,5 +110,5 @@ function intersection(first_array, second_array){
 
 ## Wrapping Up
 
-Having the ability to discern between best, average and worst case scenarios is a key skill in choosing the best algorithm for your needs, as well as taking existing algorithms and optimizing them further to make them significantly faster. Remember, while it's good to be prepared for the worst case, average cases are what hapen most of the time.
+Having the ability to discern between best, average and worst case scenarios is a key skill in choosing the best algorithm for your needs, as well as taking existing algorithms and optimizing them further to make them significantly faster. Remember, while it's good to be prepared for the worst case, average cases are what happen most of the time.
 

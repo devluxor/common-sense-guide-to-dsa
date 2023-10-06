@@ -1,4 +1,4 @@
-# Chapter 08
+# Chapter 08: Crafting Elegant Code with Stacks and Queues
 
 Stacks and queues are not entirely new: they are simply arrays with restrictions.
 
