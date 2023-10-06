@@ -103,7 +103,7 @@ Let’s look at the complete contrast between the two versions of `hasDuplicateV
 
 | Version | Time Complexity | Space complexity |
 | --- | --- | --- |
-| Vesion 01 | O(N<sup>2</2>) | O(1) |
+| Vesion 01 | O(N<sup>2</sup>) | O(1) |
 | Version 02 | O(N) | O(N) |
 
 How do we decide which to choose? The answer, of course, is that it depends on the situation.
