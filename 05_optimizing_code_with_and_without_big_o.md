@@ -72,7 +72,7 @@ But, in reality, Selection Sort is described as having a time complexity of  _O(
 
 _Big O notation ignores constants_
 
-This is simply a mathematical way of saying that Big O never includes regular numbers that are not an exponent. So, what technically should be  _O(N<sup>2</sup> / 2)_ becomes  _O(N<sup>2</sup>)_. Similary _O(2N)_ would become _O(N)_, and  _O(N / 2)_ would also become _O(N)_ too. Even  _O(100N)_ would also become _O(N)_. 
+This is simply a mathematical way of saying that Big O never includes regular numbers that are not an exponent. So, what technically should be  _O(N<sup>2</sup> / 2)_ becomes  _O(N<sup>2</sup>)_. Similarly _O(2N)_ would become _O(N)_, and  _O(N / 2)_ would also become _O(N)_ too. Even  _O(100N)_ would also become _O(N)_. 
 
 Offhand, it would seem that this rule would render Big O Notation entirely useless, as you can have two algorithms that are described in the same exact way with Big O, and yet one can be 100 times faster than the other. And that’s exactly what we’re seeing here with Selection Sort and Bubble Sort. Both are described Big O as _O(N2)_, but Selection Sort is actually twice as fast as Bubble Sort. And indeed - between if given the choice between those two options, Selection Sort is the better choice. Remember, _Big O describes a growth rate relative to the amount of data_.
 
