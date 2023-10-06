@@ -92,7 +92,7 @@ Now take a look at this second graph, where we compare _O(100N)_ with _O(N<sup>2
 
 In this second graph, we see that _O(N<sup>2</sup>)_ is faster than _O(100N)_ for certain amounts of data, but, after some point, even _O(100N)_ becomes faster, and remains faster for all increasing amounts of data from that point forward.
 
-It is for this reasin that Big O ignores constants. The purpose of Big O is that for different classifications, _there will always be a point at which one classification supersedes the other in speed, and will remain faster forever. When the point occurs exactly, however, is not the concern of Big O. 
+It is for this reason that Big O ignores constants. The purpose of Big O is that for different classifications, _there will always be a point at which one classification supersedes the other in speed, and will remain faster forever. When the point occurs exactly, however, is not the concern of Big O. 
 
 Similary, with large amounts of data, _O(log N)_ will always by faster than _O(N)_, even if the given _O(log N)_ altorithm is actually _O(2 * log N)_ under the hood.
 
