@@ -4,7 +4,7 @@ The worst case scenario is not the only situation worth considering. Being able 
 
 ## Insertion Sort
 
-We've encountered two different sorting algorithms: Bubble Sort and Selection Sort. Both have efficiencies of _O(N<sup>2</sup>)_, but Selection Sort is actually twice as fast. The next sorting algorithm, Insertion Sort, will reveal the power of analyzing scenarios beyound the worst case.
+We've encountered two different sorting algorithms: Bubble Sort and Selection Sort. Both have efficiencies of _O(N<sup>2</sup>)_, but Selection Sort is actually twice as fast. The next sorting algorithm, Insertion Sort, will reveal the power of analyzing scenarios beyond the worst case.
 
 Insertion Sort consists of the following steps:
 

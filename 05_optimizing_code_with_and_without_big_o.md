@@ -4,7 +4,7 @@ There are times when two competing algorithms may be described in exactly the sa
 
 ## Selection Sort
 
-In the last chapter, we explored an algorithm for sorting data known as Bubble Sort, which had an efficiency of _O(N<sup>2</sup>)_. Now we’ll learn about a third sorting algorithm called Insertion Sort that will reveal the power of analyzing scenarios beyond the worst case.
+In the last chapter, we explored an algorithm for sorting data known as Bubble Sort, which had an efficiency of _O(N<sup>2</sup>)_. We’re now going to dig into another sorting algorithm called Selection Sort, and see how it measures up to Bubble Sort.
 
 The steps of Selection Sort are as follows:
 
