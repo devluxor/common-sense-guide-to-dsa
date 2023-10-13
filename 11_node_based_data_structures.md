@@ -177,9 +177,9 @@ When it comes to deleting the final node of a linked list, the actual deletion t
 
 | Scenario | Array | Linked List |
 | --- | --- | --- |
-| Insert at the beginning | Worst Case | Best Case |
-| Insert at middle | Average Case | Average Case | 
-| Insert at end | Best Case | Worst Case | 
+| Delete at the beginning | Worst Case | Best Case |
+| Delete at middle | Average Case | Average Case | 
+| Delete at end | Best Case | Worst Case | 
 
 To delete from the middle of the list, the computer must modify the link of the preceding node:
 
