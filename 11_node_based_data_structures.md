@@ -217,8 +217,8 @@ This is the comparison of linked lists and arrays:
 | --- | --- | --- |
 | Reading | O(1) | O(N) |
 | Searching | O(N) | O(N) |
-| Insertion | O(N), O(1) at the end | O(N), at beginning |
-| Deletion | O(N), O(1) at the end | O(N), at beginning |
+| Insertion | O(N), O(1) at the end | O(N), O(1) at beginning |
+| Deletion | O(N), O(1) at the end | O(N), O(1) at beginning |
 
 Knowing this, why would we ever need a linked list?
 
