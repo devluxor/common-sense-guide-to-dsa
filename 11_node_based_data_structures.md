@@ -22,7 +22,7 @@ One advantage of a linked list over an array is that the program doesn't need to
 
 ## Implementing a Linked List
 
-We will create a `Node` class first;a
+We will create a `Node` class first:
 
 ```ruby
 class Node
