@@ -1,4 +1,4 @@
-# Chapter 03 : Dealing with Space Constraints
+# Chapter 03 : Big O Notation
 
 In order to help ease communication regarding time complexity, computer scientist have borrowed a concept from the world of mathematics to describe a concise and consistent language around the efficiency of data structures and algorithms. Known as _Big O Notation_, this formalized expression around these concepts allows us to easily categorize the efficiency of a given algorithm and convey it to others. 
 
