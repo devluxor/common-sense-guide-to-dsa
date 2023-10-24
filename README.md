@@ -5,7 +5,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 ## Contents:
 
 
-1. [Why Data Structures Matter](01_why_data_structures_matter.md)
+1. [Why Data Structures Matter](./01_why_data_structures_matter.md)
 
     - The Array: The Foundational Data Structure
     - Reading 
@@ -16,7 +16,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-2. [Why Algorithms Matter](02_why_algorithms_matter.md)
+2. [Why Algorithms Matter](./02_why_algorithms_matter.md)
 
     - Ordered Arrays
     - Searching an Ordered Array
@@ -25,7 +25,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-3. [Dealing With Space Constraints](03_dealing_with_space_constraints.md)
+3. [Big O Notation](./03_big_o_notation.md)
 
     - Big O: Count the Steps
     - Constant Time Vs. Linear Time 
@@ -36,7 +36,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-4. [Speeding Up Your Code with Big O](04_speeding_up_your_code_with_big_o.md)
+4. [Speeding Up Your Code with Big O](./04_speeding_up_your_code_with_big_o.md)
 
     - Bubble Sort
     - Bubble Sort Implemented
@@ -46,7 +46,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-5. [Optimizing Code With and Without Big O](05_optimizing_code_with_and_without_big_o.md)
+5. [Optimizing Code With and Without Big O](./05_optimizing_code_with_and_without_big_o.md)
     - Selection Sort
     - Selection Sort Implemented
     - The Efficiency of Selection Sort
@@ -56,7 +56,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-6. [Optimizing for Optimistic Scenarios](06_optimizing_for_optimistic_scenarios.md)
+6. [Optimizing for Optimistic Scenarios](./06_optimizing_for_optimistic_scenarios.md)
     - Insertion Sort
     - Insertion Sort Implemented
     - The Efficiency of Insertion Sort
@@ -65,7 +65,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-7. [Blazing Fast Lookup With Hash Tables](07_blazing_fast_lookup_with_hash_tables.md)
+7. [Blazing Fast Lookup With Hash Tables](./07_blazing_fast_lookup_with_hash_tables.md)
     - Enter the Hash Table
     - Hashing with Hash Functions
     - How Hash Function Work
@@ -74,7 +74,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-8. [Crafting Elegant Code with Stacks and Queues](08_crafting_elegant_code_with_stacks_and_queues.md)
+8. [Crafting Elegant Code with Stacks and Queues](./08_crafting_elegant_code_with_stacks_and_queues.md)
     - Stacks
     - Stacks in Action [_Algorithm to check for valid braces in a string_]
     - Queues
@@ -82,7 +82,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-9. [Recursively Recurse with Recursion](09_recursively_recurse_with_recursion.md)
+9. [Recursively Recurse with Recursion](./09_recursively_recurse_with_recursion.md)
     - Recurse Instead of Loop
     - The Base Case
     - Reading Recursive Code
@@ -91,7 +91,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-10. [Recursive Algorithms for Speed](10_recursive_algorithms_for_speed.md)
+10. [Recursive Algorithms for Speed](./10_recursive_algorithms_for_speed.md)
     - Partitioning
     - Quicksort
     - The Efficiency of Quicksort
@@ -100,7 +100,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-11. [Node-based Data Structures](11_node_based_data_structures.md)
+11. [Node-based Data Structures](./11_node_based_data_structures.md)
     - Linked Lists
     - Implementing a Linked List
     - Reading
@@ -112,7 +112,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-12. [Speeding Up All the Things with Binary Trees](12_speeding_up_all_the_things_with_binary_trees.md)
+12. [Speeding Up All the Things with Binary Trees](./12_speeding_up_all_the_things_with_binary_trees.md)
     - Binary Trees
     - Searching
     - Insertion
@@ -121,7 +121,7 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-13. [Connecting Everything with Graphs](13_connecting_everything_with_graphs.md)
+13. [Connecting Everything with Graphs](./13_connecting_everything_with_graphs.md)
     - Graphs
     - Breadth-First Search
     - Graph Databases
@@ -130,6 +130,6 @@ This repository contains notes made while studying the Jay Wengrow's book: 'A Co
 
 .
 
-14. [Dealing with Space Constraints](14_dealing_with_space_constraints.md)
+14. [Dealing with Space Constraints](./14_dealing_with_space_constraints.md)
     - Big O Notation As Applied to Space Complexity
     - Trade-offs between time and space
