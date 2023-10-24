@@ -45,6 +45,41 @@ def insertion_sort(array):
     array[position] = temp_value
 ```
 
+## Alternative Version
+
+### Algorithm
+
+1. Start with the second element in the array (index 1).
+2. Temporarily remove that element from the array, creating a gap.
+3. Compare the removed value to the elements on its left.
+4. If an element on the left is greater than the removed value, shift it to the right.
+5. Continue the shifting phase, by moving until a smaller value is encountered or the left end of the array is reached.
+6. Insert the removed value into the current gap.
+7. Move to the next element in the array and repeat steps 2 to 6 until you reach the end of the array.
+8. The sorted portion of the array gradually grows from left to right with each pass-through, until the array is fully sorted.
+
+### Implementation
+
+```js
+function insertionSort(array) {
+  const len = array.length;
+
+  for (let i = 1; i < len; i++) {
+    let current = array[i];
+    let j = i - 1;
+
+    while (j >= 0 && array[j] > current) {
+      array[j + 1] = array[j];
+      j--;
+    }
+
+    array[j + 1] = current;
+  }
+
+  return array;
+}
+```
+
 ## The Efficiency of Insertion Sort
 
 There are four types of steps that occur in Insertion Sort: Removals, comparisons, shifts, and insertions. 

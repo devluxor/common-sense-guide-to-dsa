@@ -42,6 +42,42 @@ function selectionSort(array) {
 }
 ```
 
+## Alternative Version
+
+### Algorithm
+
+1. The algorithm divides the array into two parts: the sorted part and the unsorted part.
+2. Initially, the sorted part is empty, and the unsorted part contains the entire array.
+3. In each pass, the algorithm scans the unsorted part of the array to find the smallest element.
+4. Once the smallest element is identified, it is swapped with the leftmost element of the unsorted part (the element at the boundary of the sorted and unsorted parts).
+5. After the swap, the boundary between the sorted and unsorted parts is shifted one position to the right.
+6. The selected element is now considered part of the sorted part, and the unsorted part is reduced by one element.
+7. Steps 3 to 6 are repeated until the unsorted part contains just one element, which means it must be sorted. Consequently, the entire array is sorted.
+
+### Implementation
+
+```js
+function selectionSort(array) {
+  const len = array.length;
+
+  for (let i = 0; i < len - 1; i++) {
+    let minIndex = i;
+
+    for (let j = i + 1; j < len; j++) {
+      if (array[j] < array[minIndex]) {
+        minIndex = j;
+      }
+    }
+
+    if (minIndex !== i) {
+      [array[i], array[minIndex]] = [array[minIndex], array[i]];
+    }
+  }
+
+  return array;
+}
+```
+
 ## The Efficiency of Selection Sort
 
 Selection Sort contains two types of steps: Comparisons and Swaps. With an array `[4, 2, 7, 1, 3 ]` of 5 elements, these are the comparisons that we would have to do:

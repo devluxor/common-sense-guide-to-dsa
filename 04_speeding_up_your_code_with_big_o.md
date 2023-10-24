@@ -59,6 +59,53 @@ bubble_sort(list)
 print(list) ## => [10, 15, 25, 35, 45, 55, 65]
 ```
 
+## Alternative version
+
+### Algorithm
+
+Assuming we want to sort an array in ascending order, bubble sort works like this:
+
+1. The algorithm starts by comparing the first two elements of the array.
+    - If the first element is greater than the second element (in ascending order), they are swapped.
+    - If they are in the correct order, no change is made.
+2. The algorithm then moves to the next pair of elements (the second and third elements) and compares them.
+3. This process continues, comparing and swapping adjacent elements until the end of the array is reached.
+4. At the end of the first iteration, the largest element in the array will be in its correct position at the end.
+5. The algorithm then starts the next iteration, repeating steps 1 to 3, but excluding the last element, as it is already in its correct position.
+6. Each iteration moves the next largest element to its correct position at the end of the remaining unsorted portion of the array.
+7. The iterations continue until no more swaps are needed, indicating that the array is completely sorted.
+If we wanted to sort the array in descending order, then we would use a "less than" comparison instead of "greater than", and that would move the smaller elements toward the end of the array.
+
+### Implementation
+
+```js
+function bubbleSort(array) {
+  const len = array.length;
+
+  for (let i = 0; i < len - 1; i++) {
+     // Flag to track if any swaps were made
+    let swapped = false;
+
+    // Last i elements are already in place
+    for (let j = 0; j < len - 1 - i; j++) {
+
+      // Check if the element in the current iteration is greater than the one in the next iteration
+      if (array[j] > array[j + 1]) {
+        // Swapping elements
+        [array[j], array[j + 1]] = [array[j + 1], array[j]];
+        swapped = true
+      }
+    }
+    if (!swapped) {
+      // If no swaps were made in this iteration, the array is already sorted
+      break;
+    }
+  }
+
+  return array;
+}
+```
+
 ## The Efficiency of Bubble Sort
 
 The Bubble Sort contains two kinds of steps:
