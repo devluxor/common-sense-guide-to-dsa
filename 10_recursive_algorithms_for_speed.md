@@ -86,6 +86,55 @@ end
 
 Note that the `partition!` method accepts the starting points of the left and right pointers as parameters, and returns the end position of the left pointer once it's complete. 
 
+### Alternative Version
+
+#### Algorithm
+
+1.	Choose the pivot element (it's best to use the middle element)**.
+2.	In the second step, assign `left` and `right` pointers to the leftmost and rightmost indices of the remaining elements in the array, respectively.
+3.	Increment the `left` pointer continuously, one cell at a time, until it reaches a value that is greater than or equal to the pivot or until it becomes greater than `right`.
+4.	Decrement the `right` pointer continuously, one cell at a time, until it reaches a value that is less than the pivot, or until it becomes smaller than `left`.
+5.	Once you're done incrementing and decrementing the pointers, evaluate whether the `left` pointer has gone beyond the `right` pointer.
+    - If this is the case, move on to step 6.
+    - If this is not the case, swap the values that the `left` and `right` pointers are pointing to, move both pointers toward each other, and repeat steps 3 and 4.
+6.	Swap the value at the pivot index with the value the `right` pointer is pointing to. This places the pivot at its correct position in the array.
+
+** A crucial factor that significantly impacts the algorithm's performance is the selection of the pivot element. If the input array is already sorted or nearly sorted, using the first element as the pivot can lead to inefficient partitioning and a time complexity of O(n^2). This degradation in performance is undesirable and undermines the primary objective of Quicksort. Opting for the middle element significantly improves the algorithm's overall performance. By selecting a pivot closer to the median value, the likelihood of encountering already sorted or nearly sorted input arrays decreases. This choice reduces the risk of worst-case scenarios and enables Quicksort to exhibit superior efficiency. When the middle element is selected as the pivot, the partition function starts with the left pointer at the first element and the right pointer at the last element. Notably, the pivot is already in its correct sorted position, eliminating the need for extra swaps. When the middle element is the pivot, the recursive calls in the quickSort function include the pivot element. By doing so, the algorithm avoids worst-case scenarios and generally achieves better performance.
+
+#### Implementation
+
+```js
+function partition(arr, low, high) {
+  const pivotIndex = Math.floor((low + high) / 2); // note the pivot is the middle!
+  const pivot = arr[pivotIndex];
+  let left = low;
+  let right = high;
+
+  while (left <= right) {
+    while (arr[left] < pivot) {
+      left++;
+    }
+
+    while (arr[right] > pivot) {
+      right--;
+    }
+
+    if (left > right) {
+      break;
+    }
+
+    // Swap values at left and right pointers
+    [arr[left], arr[right]] = [arr[right], arr[left]];
+
+    left++;
+    right--;
+  }
+
+  // Return the pivot index
+  return left;
+}
+```
+
 ## Quicksort
 
 This algorithm relies heavily on partitions. It works as follows:
@@ -111,6 +160,28 @@ def quicksort!(left_index, right_index)
   # of the pivot:
   quicksort!(pivot_position + 1, right_index)
 end
+```
+
+### Alternative Version
+
+#### Algorithm
+
+1.	Partition the array based on a chosen pivot element. Select a pivot element from the array and rearrange the elements so that all elements smaller than the pivot are placed to its left, and all elements greater than the pivot are placed to its right.
+2.	Treat the subarrays to the left and right of the pivot as their own arrays and recursively repeat the first step. Partition each smaller subarray by selecting a new pivot and applying the partitioning process again.
+3.	Continue recursively partitioning the subarrays until you reach subarrays that have zero or one element. These smaller subarrays serve as the base case, as an empty array or an array with one element is already sorted.
+
+#### Implementation
+
+```js
+function quickSort(arr, low = 0, high = arr.length - 1) {
+  const pivotIndex = partition(arr, low, high);
+  if (low < pivotIndex - 1) {
+    quickSort(arr, low, pivotIndex - 1);
+  }
+  if (pivotIndex < high) {
+    quickSort(arr, pivotIndex, high);
+  }
+}
 ```
 
 ## The Efficiency of Quicksort
