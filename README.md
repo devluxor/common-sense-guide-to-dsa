@@ -1,6 +1,8 @@
 # A Common Sense Guide to Data Structures and Algorithms
 
-This repository contains notes made while studying the Jay Wengrow's book: 'A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills'
+This repository contains notes made while studying the Jay Wengrow's book: 'A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills'.
+
+For an alternative approach to these topics, please visit the [Launch School 'Introduction to DSA' course](https://github.com/lucsorr/launch-school/tree/main/LS220/notes).
 
 ## Contents:
 
