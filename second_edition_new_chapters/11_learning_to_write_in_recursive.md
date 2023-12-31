@@ -1,13 +1,9 @@
 # 11: Learning to Write in Recursive
 
-Through deliberate practice and taking note of various recursive patterns, I
-discovered some techniques that helped me to learn to “write in recursive”
+Through deliberate practice and taking note of various recursive patterns, I discovered some techniques that helped me to learn to “write in recursive”
 more easily.
 
-Over the course of tackling various recursive problems, I began to find that
-there are various “categories” of problems. Once I learned an effective tech-
-nique for a certain category, when I found another problem that belonged to
-the same category, I was able to apply the same technique to solve it.
+Over the course of tackling various recursive problems, I began to find that there are various “categories” of problems. Once I learned an effective technique for a certain category, when I found another problem that belonged to the same category, I was able to apply the same technique to solve it.
 
 ## Recursive Category: Repeatedly Execute
 
@@ -18,11 +14,12 @@ For instance:
 ```js
 function countdown(number) {
   console.log(number);
+
   if(number === 0) { // number being 0 is the base case
     return;
-  } else {
-    countdown(number - 1);
   }
+  
+  countdown(number - 1);
 }
 ```
 
@@ -46,6 +43,7 @@ def double_array(array, index=0):
   # Base case: when the index goes past the end of the array
   if (index >= len(array)):
     return
+  
   array[index] *= 2
   double_array(array, index + 1)
 ```
@@ -70,9 +68,9 @@ For example, the factorial of 6 is the result of 6 * the factorial of 5; the fac
 def factorial(number)
   if number == 1
     return 1
-  else
-    return number * factorial(number - 1)
   end
+  
+  return number * factorial(number - 1)
 end
 ```
 
@@ -87,6 +85,7 @@ While we previously saw the bottom-up approach using a classic loop, we can also
 ```ruby
 def factorial(n, i=1, product=1)
   return product if i > n
+
   return factorial(n, i + 1, product * i)
 end
 ```
@@ -128,6 +127,7 @@ The last thing we need to do is handle the base case. That is, if each subproble
 def sum(array)
   # Base case: only one element in the array:
   return array[0] if array.length == 1
+  
   return array[0] + sum(array[1, array.length - 1])
 end
 ```
@@ -138,6 +138,7 @@ end
 def reverse(string)
   # Base case: string with just one character
   return string[0] if string.length == 1
+
   return reverse(string[1, string.length - 1]) + string[0]
 end
 ```
