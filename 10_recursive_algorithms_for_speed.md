@@ -10,7 +10,7 @@ Quicksort relies on a concept called _partitioning_.
 
 ## Partitioning
 
-To partition an array is to take a random value from the array, which is then called the _pivot_, and make sure that every number that is less than the pivot ends up to the left of the pivot, and that every number that is greater than the pivot will be to the right of the pivot.
+To partition an array is to take an arbitrary value from the array, which is then called the _pivot_, and make sure that every number that is less than the pivot ends up to the left of the pivot, and that every number that is greater than the pivot will be to the right of the pivot.
 
 For example, if we have the following array:
 
