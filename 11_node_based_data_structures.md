@@ -18,7 +18,7 @@ In addition to the data stored within the node, _each node also stores the memor
 
 ![title](images/41.png)
 
-One advantage of a linked list over an array is that the program doesn't need to find a bunch of empty cells in a row to store its data. Instead, the program can store the data accross many cells that are not necessarily adjacent to each other.
+One advantage of a linked list over an array is that the program doesn't need to find a bunch of empty cells in a row to store its data. Instead, the program can store the data across many cells that are not necessarily adjacent to each other.
 
 ## Implementing a Linked List
 
@@ -215,7 +215,7 @@ This is the comparison of linked lists and arrays:
 
 | Operation | Array | Linked List |
 | --- | --- | --- |
-| Reading | O(1) | O(N) |
+| Reading | O(1) | O(N), O(1) from the beginning |
 | Searching | O(N) | O(N) |
 | Insertion | O(N), O(1) at the end | O(N), O(1) at beginning |
 | Deletion | O(N), O(1) at the end | O(N), O(1) at beginning |
@@ -239,7 +239,7 @@ Arrays will be superior when it comes to inserting data, since we’d be able to
 
 When it comes to deleting data from a queue, though, linked lists would be faster, since it would be O(1) compared to arrays which delete data from the beginning at O(N). Based on this analysis, it would seem that it doesn’t matter whether we use an array or a linked list, as we’d end up with one major operation that is O(1) and another that is O(N).
 
-However, if we use a special variant of a linked list called the doubly linked list, we’d be able to insert and delete data from a queue at O(1).
+However, if we use a special variant of a linked list called **the doubly linked list**, we’d be able to insert and delete data from a queue at O(1).
 
 A doubly linked list is like a linked list, except that each node has two links - one that points to the next node, and one that points to the preceding node. In addition, the doubly linked list keeps track of both the first and last nodes:
 
@@ -292,7 +292,16 @@ class DoublyLinkedList
 end
 ```
 
-Because doubly linked lists have immediate access to both the front and end of the list, they can insert data on either side at O(1) as well as delete data on either side at O(1). Since doubly linked lists can insert data at the end in O(1) time and delete data from the front in O(1) time, they make the perfect underlying data structure for a queue.
+Because doubly linked lists have immediate access to both the front and end of the list, they can insert data on either side at O(1) as well as delete data on either side at O(1). And since doubly linked lists can insert data at the end in O(1) time and delete data from the front in O(1) time, **they make the perfect underlying data structure for a queue**.
+
+This is the comparison of doubly linked lists and arrays:
+
+| Operation | Array | Doubly Linked List |
+| --- | --- | --- |
+| Reading | O(1) | O(N), O(1) from the beginning |
+| Searching | O(N) | O(N) |
+| Insertion | O(N), O(1) at the end | O(N), O(1) at beginning AND the end |
+| Deletion | O(N), O(1) at the end | O(N), O(1) at beginning AND the end |
 
 Here’s a more complete example of a queue that is built upon a doubly linked list:
 
