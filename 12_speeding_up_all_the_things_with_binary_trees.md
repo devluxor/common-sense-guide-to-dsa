@@ -244,6 +244,14 @@ def delete(valueToDelete, node):
       return node.rightChild
 ```
 
+## Binary Trees Efficiency Table
+
+| Operation | Worst Case Scenario (Totally Imbalanced tree; data inserted in order) | Average Scenario (Balanced Tree; data inserted in random order) | Best Case Scenario (Perfectly Balanced tree; data inserted in a explicitly balanced manner)|
+| --- | --- | --- | --- |
+| Search | O(N) | O(log N) | O(log N) |
+| Insertion | O(N) | O(log N) | O(log N) |
+| Deletion | O(N) | O(log N) | O(log N) |
+
 ## Binary Trees in Action
 
 Binary trees boast efficiencies of O(log N) for search, insertion, and deletion, making it an efficient choice for scenarios in which we need to store and manipulate ordered data. This is particularly true if we will be
