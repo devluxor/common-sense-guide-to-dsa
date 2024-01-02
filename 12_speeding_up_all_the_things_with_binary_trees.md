@@ -258,6 +258,7 @@ Binary trees boast efficiencies of O(log N) for search, insertion, and deletion,
 modifying the data often, because while ordered arrays are just as fast as binary trees when searching data, binary trees are significantly faster when it comes to inserting and deleting data.
 
 For example, let’s say that we’re creating an application that maintains a list of book titles. We’d want our application to have the following functionality:
+
 - Our program should be able to print out the list of book titles in alphabetical order.
 - Our program should allow for constant changes to the list.
 - Our program should allow the user to search for a title within the list.
