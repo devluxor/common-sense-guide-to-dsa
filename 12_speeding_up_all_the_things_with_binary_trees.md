@@ -252,7 +252,7 @@ def delete(valueToDelete, node):
 | Insertion | O(N) | O(log N) | O(log N) |
 | Deletion | O(N) | O(log N) | O(log N) |
 
-## Binary Trees in Action
+## Binary Trees in Action (Tree traversal)
 
 Binary trees boast efficiencies of O(log N) for search, insertion, and deletion, making it an efficient choice for scenarios in which we need to store and manipulate ordered data. This is particularly true if we will be
 modifying the data often, because while ordered arrays are just as fast as binary trees when searching data, binary trees are significantly faster when it comes to inserting and deleting data.
