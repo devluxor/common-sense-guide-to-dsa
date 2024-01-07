@@ -8,8 +8,10 @@ func main() {
 	root.insert(2)
 	root.insert(4)
 	root.insert(1)
-	root.insert(5)
-	fmt.Println(root.search(6))
+	root.insert(900)
+	// fmt.Println(root.search(5))
+	// fmt.Println(root.greatest())
+	root.traversePrint()
 }
 
 type TreeNode struct {
@@ -47,3 +49,22 @@ func (node *TreeNode) insert(d int) {
 		node.rightChild.insert(d)
 	}
 }
+
+func (node *TreeNode) traversePrint() {
+	if node == nil {
+		return
+	}
+
+	node.leftChild.traversePrint()
+	fmt.Println(node.data)
+	node.rightChild.traversePrint()
+}
+
+func (currentNode *TreeNode) greatest() *TreeNode {
+	if currentNode.rightChild == nil {
+		return currentNode
+	} 
+
+	return currentNode.rightChild.greatest()
+}
+
