@@ -7,18 +7,30 @@ import (
 func main() {
 	l := createList(1)
 
-	i := 2
-	for i <= 10 {
-		l.insert(i)
-		i++
-	}
+	// i := 2
+	// for i <= 10 {
+	// 	l.insert(i)
+	// 	i++
+	// }
+	
+	l.insert(1)
+	l.insert(1)
+	l.insert(2)
+	l.insert(1)
+	l.insert(3)
+	l.insert(1)
+	l.insert(4)
 
-	// l.print()
+	l.print()
 	// fmt.Println(l.last())
 	// fmt.Println(l.lastNoTail())
 	// l.removeTarget(2)
 	// l.print()
-	l.reverse()
+	// l.reverse()
+
+	l.head.removeDuplicates()
+
+
 	l.print()
 }
 
@@ -75,7 +87,7 @@ func (list *List) removeTarget(target int) *Node {
 	current := list.head
 
 	for current != nil {
-		if current.data == target {
+		if current.data == target { // 
 			previous.next = current.next
 		} else {
 			previous = current
@@ -101,3 +113,77 @@ func (list *List) reverse() *Node {
 	list.head = previous
 	return list.head
 }
+
+// func (list *List) removeDuplicates() *Node {
+// 	dummy := &Node{data: nil, next: list.head}
+// 	previous := dummy
+// 	current := list.head
+// 	seen := make(map[int]bool)
+// 	var currentData int
+
+// 	for current != nil {
+// 		currentData = current.data.(int)
+		
+// 		if seen[currentData] {
+// 			previous.next = current.next
+// 		} else {
+// 			previous = current
+// 		}
+		
+// 		seen[currentData] = true
+// 		current = current.next
+// 	}
+
+// 	return dummy.next 
+// }
+
+func (head *Node) removeDuplicates() *Node {
+	dummy := &Node{data: nil, next: head}
+	previous := dummy
+	current := head
+	seen := make(map[int]bool)
+	var currentData int
+
+	for current != nil {
+		currentData = current.data.(int)
+		
+		if seen[currentData] {
+			previous.next = current.next
+		} else {
+			previous = current
+		}
+		
+		seen[currentData] = true
+		current = current.next
+	}
+
+	return dummy.next 
+}
+
+/*
+for every node
+
+save node data
+
+if node is seen, delete node
+
+remove duplicates with space complexity of 1
+
+try
+
+current = head
+next = current.next
+
+for next != nil {
+	if curr.val == next.val {
+		next = next.next
+	} else {
+		current.next = next
+		current = next
+		next = current.next
+	}
+}
+
+current.next = nil
+return head
+*/

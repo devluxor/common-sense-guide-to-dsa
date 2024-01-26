@@ -33,7 +33,7 @@ func uniquePaths(rows, columns int, memo map[uint64]int) int {
 }
 
 func rCsToKey(rows, columns int) uint64 {
-	return uint64(rows<<32 | columns)
+	return uint64(rows << 32 | columns)
 }
 
 func keyToRCs(key uint64) (uint32, uint32) {

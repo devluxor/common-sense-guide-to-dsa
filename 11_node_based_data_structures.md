@@ -4,6 +4,19 @@ In this chapter we introduce the concept of _node_. Node-based data structures o
 
 We will explore the linked list, which is the simplest node-based data structure and the foundation of future chapters. Linked list are almost identical to arrays, but they come with their own set of trade offs in efficiency that can give us a performance boost for certain situations.
 
+## Overview and use cases
+
+Linked Lists are preferable to Arrays when:
+- You need insertions/deletions in the list to be extremely fast,
+- You don’t need random, unordered access to the data,
+- You insert or delete items in the middle of a list,
+- You can’t evaluate the exact size of the list (it needs to grow or shrink throughout the execution).
+
+Arrays are preferable over Linked Lists when:
+- You frequently need random, unordered access to the data,
+- You need extreme performance to access the items,
+- The number of items doesn’t change during execution, so you can easily allocate contiguous space of computer memory.
+
 ## Linked lists
 
 A linked list is a data structure that represents a list of items, just like an array. Their implementation under the hood, however, is different, and they have different performance in some situations. 
